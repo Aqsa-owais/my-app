@@ -1,17 +1,18 @@
-import Link from 'next/link'
-
+import Link from "next/link";
 export default function Home() {
   return (
-    <div className="min-h-screen bg-blue-100 flex flex-col items-center justify-center p-4">
-      <h1 className="text-4xl font-bold mb-4">Welcome to Our Simple Website</h1>
-      <p className="mb-8">This is the home page (Page 1)</p>
-      <nav className="space-x-4">
-        <Link href="/about" className="text-blue-600 hover:underline">About</Link> 
-        <br />
-        <Link href="/services" className="text-blue-600 hover:underline">Services</Link> <br />
-        <Link href="/contact" className="text-blue-600 hover:underline">Contact</Link> <br />
-        <Link href="/faq" className="text-blue-600 hover:underline">FAQ</Link> <br />
-      </nav>
+    <div className="relative">
+      <img
+        src="https://getwallpapers.com/wallpaper/full/2/9/7/494243.jpg"
+        alt="burger-image"
+        className="w-screen h-100"
+        id="img"
+      />
+      <h1 className="absolute top-20 left-0 text-6xl " id="content">
+      Welcome to our Resturent
+      </h1>
+      <p id="contents" className="absolute top-20 left-0 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ex maiores nam? Reprehenderit itaque praesentium asperiores harum impedit! Repellat, dolorum!</p>
+      <button className="absolute top-0 left-96 text-4xl" id="btn">Order Now</button>
     </div>
-  )
+  );
 }
